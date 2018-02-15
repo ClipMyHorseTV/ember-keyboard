@@ -70,3 +70,18 @@ test('when product===safari and platform===mac', function(assert) {
   assert.equal(result[190], 'NumpadComma', 'trumps default with mac map');
   assert.equal(result[65], 'KeyA', 'based on default map');
 });
+
+test('when platform===FireTv', function(assert) {
+  assert.expect(8);
+
+  const result = generateCodeMap('FireTv', '');
+
+  assert.equal(result[179], 'PlayPause', 'PlayPause on FireTv');
+  assert.equal(result[227], 'Rewind', 'Rewind on FireTv');
+  assert.equal(result[228], 'FastForward', 'FastForward on FireTv');
+  assert.equal(result[13], 'Enter', 'Enter on FireTv');
+  assert.equal(result[38], 'ArrowUp', 'ArrowUp on FireTv');
+  assert.equal(result[40], 'ArrowDown', 'ArrowDown on FireTv');
+  assert.equal(result[37], 'ArrowLeft', 'ArrowLeft on FireTv');
+  assert.equal(result[39], 'ArrowRight', 'ArrowRight on FireTv');
+});
