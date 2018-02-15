@@ -1,8 +1,8 @@
 export default {
-  179: 'PlayPause',
-  227: 'Rewind',
-  228: 'FastForward',
-  13: 'Enter',
+  179: 'MediaPlayPause',
+  227: 'MediaRewind',
+  228: 'MediaFastForward',
+  13: 'NumpadEnter',
   38: 'ArrowUp',
   40: 'ArrowDown',
   37: 'ArrowLeft',
