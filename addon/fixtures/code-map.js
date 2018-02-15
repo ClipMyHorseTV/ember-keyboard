@@ -3,7 +3,7 @@ import generateCodeMap from 'ember-keyboard/utils/generate-code-map';
 let platform, product = '';
 
 if (typeof FastBoot === 'undefined') {
-  if (navigator.userAgent.indexOf() > -1) {
+  if (navigator.userAgent.indexOf('AmazonWebAppPlatform') > -1) {
     platform = 'FireTv';
   } else  {
     platform = navigator.platform;
